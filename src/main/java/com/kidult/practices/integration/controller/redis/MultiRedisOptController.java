@@ -1,4 +1,4 @@
-package com.kidult.practices.integration.controller;
+package com.kidult.practices.integration.controller.redis;
 
 import com.kidult.practices.integration.domain.RedisDomain;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,18 +10,18 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @author Created by tommy on 2022/09/14.
+ * @author Created by tommy on 2022/09/13.
  */
 @RestController
-@RequestMapping("/sentinelRedisOpt")
-public class SentinelRedisOptController {
+@RequestMapping("/multiRedisOpt")
+public class MultiRedisOptController {
 
     @Autowired
-    @Qualifier("sentinelRedisTemplate")
+    @Qualifier("redisTemplate")
     private RedisTemplate redisTemplate;
 
     @Autowired
-    @Qualifier("sentinelRedisTemplate2")
+    @Qualifier("redisTemplate2")
     private RedisTemplate redisTemplate2;
 
     @GetMapping("/{redisIndex}/setStrKV")
@@ -52,4 +52,5 @@ public class SentinelRedisOptController {
             return redisTemplate2.opsForValue().get("redisDomain");
         }
     }
+
 }

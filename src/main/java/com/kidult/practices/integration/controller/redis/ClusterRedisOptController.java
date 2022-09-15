@@ -1,4 +1,4 @@
-package com.kidult.practices.integration.controller;
+package com.kidult.practices.integration.controller.redis;
 
 import com.kidult.practices.integration.domain.RedisDomain;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -1,4 +1,4 @@
-package com.kidult.practices.integration.config;
+package com.kidult.practices.integration.config.redis;
 
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.pool2.impl.GenericObjectPoolConfig;

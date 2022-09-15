@@ -1,4 +1,4 @@
-package com.kidult.practices.integration.config;
+package com.kidult.practices.integration.config.redis;
 
 import io.lettuce.core.ClientOptions;
 import io.lettuce.core.SocketOptions;
