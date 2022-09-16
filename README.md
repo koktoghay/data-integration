@@ -42,3 +42,8 @@
 3. 应用程序自动故障恢复，因此在哨兵配置架构下，应用程序采用哨兵配置能够自动重连master，从而避免应用故障
 
 ### ClusterRedisTemplateConfiguration
+[Redis Cluster](https://docs.spring.io/spring-data/data-redis/docs/current/reference/html/#cluster)
+
+
+### RedissonConfiguration
+[Redisson配置方法](https://github.com/redisson/redisson/wiki/2.-%E9%85%8D%E7%BD%AE%E6%96%B9%E6%B3%95#23-%E5%B8%B8%E7%94%A8%E8%AE%BE%E7%BD%AE)
